@@ -1,0 +1,193 @@
+/* login.css - Matching Signup Page Style */
+
+/* Base Styles & Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #2d3748;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+.Header {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.Header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(to right, #ffffff, #f0f4ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Subtitle */
+.p {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    max-width: 500px;
+}
+
+/* Form Container */
+form {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    padding: 2.5rem;
+    transition: all 0.3s ease;
+}
+
+form:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Fields */
+label {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #4a5568;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: #f8fafc;
+    margin-bottom: 1.5rem;
+}
+
+input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+    background-color: white;
+}
+
+/* Password Fields Specific */
+input[type="password"] {
+    letter-spacing: 0.1em;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background: linear-gradient(to right, #2ecc71, #27ae60);
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(to right, #27ae60, #219653);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(46, 204, 113, 0.4);
+}
+
+input[type="submit"]:active {
+    transform: translateY(0);
+}
+
+/* Link Styles */
+p {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+}
+
+a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #5a6fd1;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .Header h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    form {
+        padding: 1.5rem;
+    }
+    
+    .Header h1 {
+        font-size: 1.75rem;
+    }
+    
+    input {
+        padding: 0.7rem 0.9rem;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        padding: 15px 10px;
+    }
+    
+    .Header h1 {
+        font-size: 1.5rem;
+    }
+    
+    form {
+        padding: 1.25rem;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+form {
+    animation: fadeIn 0.6s ease-out 0.2s forwards;
+}
